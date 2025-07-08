@@ -20,14 +20,9 @@ jobs:
         run: chmod +x gradlew
 
 
-      - name: List Gradle projects
-        run: ./gradlew projects
-
       - name: Build with Gradle
         run: ./gradlew :Bukkit:shadowJar
-
     
-
       - name: List files in build/libs
         run: ls -la build/libs
 
