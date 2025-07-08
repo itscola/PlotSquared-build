@@ -22,20 +22,19 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew :plotsquared-bukkit:shadowJar
 
-      
       - name: Find all jar files
         run: find . -name "*.jar"
 
       - name: List core jars
-      run: ls -la Core/build/libs
+        run: ls -la Core/build/libs
 
       - name: List bukkit jars
-      run: ls -la Bukkit/build/libs
+        run: ls -la Bukkit/build/libs
 
       - name: Upload build artifacts
-      uses: actions/upload-artifact@v4
-      with:
-      name: build-artifacts
-      path: |
-        Core/build/libs/*.jar
-        Bukkit/build/libs/*.jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts
+          path: |
+            Core/build/libs/*.jar
+            Bukkit/build/libs/*.jar
