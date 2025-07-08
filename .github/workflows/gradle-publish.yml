@@ -21,7 +21,7 @@ jobs:
 
 
       - name: Build with Gradle
-        run: ./gradlew :Bukkit:shadowJar
+        run: ./gradlew :plotsquared-bukkit:shadowJar
     
       - name: List files in build/libs
         run: ls -la build/libs
