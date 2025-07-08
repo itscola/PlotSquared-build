@@ -20,7 +20,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew :plotsquared-bukkit:shadowJar
+        run: ./gradlew :Bukkit:shadowJar
 
       - name: List files in build/libs
         run: ls -la build/libs
