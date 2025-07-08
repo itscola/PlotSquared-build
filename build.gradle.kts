@@ -186,6 +186,7 @@ subprojects {
         shadowJar {
             this.archiveClassifier.set(null as String?)
             this.archiveFileName.set("${project.name}-${project.version}.${this.archiveExtension.getOrElse("jar")}")
+            from(sourceSets.main.get().output)
         }
 
         named("build") {
