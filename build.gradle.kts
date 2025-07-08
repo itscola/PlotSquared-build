@@ -202,9 +202,7 @@ subprojects {
     }
 }
 
-tasks.getByName<Jar>("jar") {
-    enabled = false
-}
+
 
 val supportedVersions = listOf("1.19.4", "1.20.6", "1.21.1", "1.21.3", "1.21.4", "1.21.5")
 tasks {
